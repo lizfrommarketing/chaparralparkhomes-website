@@ -1,0 +1,37 @@
+# Netlify config for the Chaparral Park Homes site (canonical host: https://chaparralparkhomes.com)
+# Every page also carries <link rel="canonical"> and og:url pointing at https://chaparralparkhomes.com/...
+# The redirects below make sure only that one host is ever served, so the other addresses can't create duplicate content.
+
+# www -> apex (add the www domain in Netlify > Domain management so these rules can fire)
+[[redirects]]
+  from = "https://www.chaparralparkhomes.com/*"
+  to = "https://chaparralparkhomes.com/:splat"
+  status = 301
+  force = true
+
+# http -> https on the apex
+[[redirects]]
+  from = "http://chaparralparkhomes.com/*"
+  to = "https://chaparralparkhomes.com/:splat"
+  status = 301
+  force = true
+
+# Netlify's default *.netlify.app address -> real domain (replace SITE-NAME with the Netlify site name, or remove if you disable the netlify.app URL)
+# [[redirects]]
+#   from = "https://SITE-NAME.netlify.app/*"
+#   to = "https://chaparralparkhomes.com/:splat"
+#   status = 301
+#   force = true
+
+# Tidy URLs: /index.html and /blog/index.html are the canonical forms used in the sitemap and canonicals, so no extra redirect is needed.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

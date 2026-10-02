@@ -541,3 +541,8 @@ body { overflow-x: clip; }
 @media (max-width: 480px) {
      .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- Article: cross-site note ---------- */
+.network-note { margin-top: var(--space-lg); padding: var(--space-sm) var(--space-md); background: var(--color-cream-dark); border-left: 3px solid var(--color-gold); }
+.network-note p { margin: 0; font-size: 0.95rem; }
+.network-note a { color: var(--color-gold-dark); border-bottom: 1px solid var(--color-gold); }
