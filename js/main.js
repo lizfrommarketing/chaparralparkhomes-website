@@ -3,6 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var yearEl = document.getElementById('year');
   if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
+  // Contact page: preselect the interest from ?interest=valuation|market-report|buy|sell|invest
+  var interest = document.getElementById('interest');
+  if (interest) {
+    var wanted = (new URLSearchParams(window.location.search).get('interest') || '').toLowerCase();
+    var map = { valuation: 'Free Home Valuation', 'market-report': 'Chaparral Park Market Report', buy: 'Buying a Home', sell: 'Selling a Home', invest: 'Investment Property' };
+    if (map[wanted]) { interest.value = map[wanted]; }
+  }
+
   var toggle = document.querySelector('.menu-toggle');
   var links = document.querySelector('.nav-links');
   if (!toggle || !links) return;
