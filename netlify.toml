@@ -23,6 +23,92 @@
 #   status = 301
 #   force = true
 
+# Old-site blog URLs had no .html. The canonical/sitemap URLs for blog posts are the .html files, so
+# /blog/<slug> 301s to /blog/<slug>.html (same slugs as the old chaparralparkhomes.com blog) and old links keep working.
+# Plain 301s only apply when no file exists at the extensionless path, so these never loop with the .html files.
+[[redirects]]
+  from = "/blog"
+  to = "/blog/index.html"
+  status = 301
+
+# The two posts that were already ported under shorter file names: old-site slug -> new file
+[[redirects]]
+  from = "/blog/relocating-to-scottsdale-az-here-s-what-you-need-to-know-about-85250"
+  to = "/blog/relocating-to-scottsdale-az.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/why-chaparral-park-is-the-heart-of-85250-and-why-buyers-are-moving-here-fast"
+  to = "/blog/why-chaparral-park-is-the-heart-of-85250.html"
+  status = 301
+
+# The 13 posts ported with their original old-site slug as the file name
+[[redirects]]
+  from = "/blog/barry-s-solidcore-hot-yoga-university-life-time-the-fitness-scene-that-makes-85250-different"
+  to = "/blog/barry-s-solidcore-hot-yoga-university-life-time-the-fitness-scene-that-makes-85250-different.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/a-local-s-complete-guide-to-chaparral-park-every-amenity-every-detail"
+  to = "/blog/a-local-s-complete-guide-to-chaparral-park-every-amenity-every-detail.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/scottsdale-s-walking-and-running-hub-the-greenbelt-the-canal-and-the-run-clubs-that-make-85250-different"
+  to = "/blog/scottsdale-s-walking-and-running-hub-the-greenbelt-the-canal-and-the-run-clubs-that-make-85250-different.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-best-coffee-in-south-scottsdale-a-local-s-honest-guide-to-85250-s-caffeine-scene"
+  to = "/blog/the-best-coffee-in-south-scottsdale-a-local-s-honest-guide-to-85250-s-caffeine-scene.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nobu-catch-lephante-din-tai-fung-fashion-square-s-new-culinary-lineup-and-what-it-means-for-85250"
+  to = "/blog/nobu-catch-lephante-din-tai-fung-fashion-square-s-new-culinary-lineup-and-what-it-means-for-85250.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/il-bracco-jing-starfish-the-new-restaurants-redefining-scottsdale-s-dining-scene-near-85250"
+  to = "/blog/il-bracco-jing-starfish-the-new-restaurants-redefining-scottsdale-s-dining-scene-near-85250.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-best-wine-bars-near-85250-saint-urban-and-scottsdale-s-growing-wine-scene"
+  to = "/blog/the-best-wine-bars-near-85250-saint-urban-and-scottsdale-s-growing-wine-scene.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/where-to-find-a-great-cigar-near-85250-scottsdale-s-best-cigar-bars-and-lounges"
+  to = "/blog/where-to-find-a-great-cigar-near-85250-scottsdale-s-best-cigar-bars-and-lounges.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/scottsdale-s-hidden-speakeasies-a-local-s-guide-for-85250-residents"
+  to = "/blog/scottsdale-s-hidden-speakeasies-a-local-s-guide-for-85250-residents.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-indian-bend-wash-greenbelt-the-reason-85250-buyers-never-leave"
+  to = "/blog/the-indian-bend-wash-greenbelt-the-reason-85250-buyers-never-leave.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/why-85250-scottsdale-is-one-of-the-best-zip-codes-for-real-estate-investment"
+  to = "/blog/why-85250-scottsdale-is-one-of-the-best-zip-codes-for-real-estate-investment.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/living-minutes-from-old-town-scottsdale-why-85250-is-the-sweet-spot"
+  to = "/blog/living-minutes-from-old-town-scottsdale-why-85250-is-the-sweet-spot.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-real-reason-families-move-to-85250-scottsdale-unified-school-district"
+  to = "/blog/the-real-reason-families-move-to-85250-scottsdale-unified-school-district.html"
+  status = 301
+
+
 # Tidy URLs: /index.html and /blog/index.html are the canonical forms used in the sitemap and canonicals, so no extra redirect is needed.
 
 [[headers]]
