@@ -1,0 +1,14 @@
+{
+  "hub": { "name": "Elizabeth Vijan", "url": "https://elizabethvijan.com/" },
+  "self": "https://chaparralparkhomes.com/",
+  "sites": [
+    { "name": "Elizabeth Vijan: Scottsdale & Phoenix", "url": "https://elizabethvijan.com/" },
+    { "name": "Chaparral Park Homes (85250)", "url": "https://chaparralparkhomes.com/" }
+  ],
+  "areas": [
+    { "name": "Scottsdale", "eyebrow": "Elizabeth Vijan", "url": "https://elizabethvijan.com/scottsdale.html", "blurb": "Guard-gated golf estates, Old Town nightlife, and the Chaparral Park & 85250 corridor." },
+    { "name": "Arcadia", "eyebrow": "Phoenix", "url": "https://elizabethvijan.com/arcadia.html", "blurb": "Citrus-grove estate lots beneath Camelback Mountain, mid-century ranches, and destination dining." },
+    { "name": "Arcadia Lite", "eyebrow": "Phoenix", "url": "https://elizabethvijan.com/arcadia-lite.html", "blurb": "Arcadia's walkable charm at a more attainable price point, steps from Camelback & Indian School dining." },
+    { "name": "Central Phoenix", "eyebrow": "Phoenix", "url": "https://elizabethvijan.com/central-phoenix.html", "blurb": "Historic districts like Willo & Encanto-Palmcroft, walkable to Roosevelt Row and the Biltmore corridor." }
+  ]
+}
