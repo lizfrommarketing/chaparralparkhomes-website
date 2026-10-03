@@ -546,3 +546,19 @@ body { overflow-x: clip; }
 .network-note { margin-top: var(--space-lg); padding: var(--space-sm) var(--space-md); background: var(--color-cream-dark); border-left: 3px solid var(--color-gold); }
 .network-note p { margin: 0; font-size: 0.95rem; }
 .network-note a { color: var(--color-gold-dark); border-bottom: 1px solid var(--color-gold); }
+
+/* ---------- Link back to the main site (ElizabethVijan.com) ---------- */
+.nav-links a.nav-network { color: var(--color-gold-dark); font-weight: 500; }
+.footer-mainsite { color: var(--color-gold); border-bottom: 1px solid var(--color-gold); display: inline-block; margin-top: 0.5rem; }
+.footer-mainsite:hover { color: var(--color-white); border-color: var(--color-white); }
+.mainsite-band { background: var(--color-black); color: var(--color-white); border-top: 3px solid var(--color-gold); border-bottom: 3px solid var(--color-gold); padding: 3.5rem 0; }
+.mainsite-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md, 1.5rem) var(--space-lg, 2.5rem); flex-wrap: wrap; }
+.mainsite-inner > div { flex: 1 1 420px; }
+.mainsite-band h2 { color: var(--color-white); margin-bottom: 0.5rem; }
+.mainsite-band p { color: rgba(255,255,255,0.78); margin: 0; max-width: 62ch; }
+.mainsite-band .eyebrow { color: var(--color-gold); }
+.mainsite-band .btn-primary { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-black); white-space: nowrap; }
+.mainsite-band .btn-primary:hover { background: var(--color-white); border-color: var(--color-white); color: var(--color-black); }
+.mainsite-strip { background: var(--color-cream-dark); border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); padding: 1.1rem 0; text-align: center; }
+.mainsite-strip p { margin: 0; }
+.mainsite-strip a { color: var(--color-gold-dark); border-bottom: 1px solid var(--color-gold); }

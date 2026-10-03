@@ -21,6 +21,10 @@ The footer "Part of the Elizabeth Vijan network of local sites" block, the foote
 
 Links between the sites are normal followed links (no `nofollow`).
 
+### Pointing to the main site (elizabethvijan.com)
+
+Beyond the generated blocks, every page carries these hand-maintained references to https://elizabethvijan.com/ (all plain followed links): the header nav link labelled "ElizabethVijan.com" (`a.nav-network`), a "Main site: ElizabethVijan.com" line in the footer brand paragraph (`a.footer-mainsite`), the black "Visit ElizabethVijan.com" band on the home page (`#main-site`), a one-line strip on `about.html` and `contact.html` (`.mainsite-strip`), and `affiliation` + `sameAs` entries in the RealEstateAgent JSON-LD (and `sameAs` on the About-page Person). `network-sites.json` already lists the hub, so no change is needed there.
+
 ## Footer logo
 
 `assets/images/tackett-logo-black-540.webp` (540x128, ~10 KB) is the black Tackett Team logo used on elizabethvijan.com, shown on a white brand band at the top of the dark footer. The original PNG is kept for schema.org `logo`.
