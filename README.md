@@ -2,7 +2,11 @@
 
 Chaparral Park Homes - Elizabeth Vijan, Tackett Team at eXp Realty.
 
-Plain HTML/CSS/JS. Original black/white/gold design, now with optimized photography, SEO/AEO markup and lead capture.
+Plain HTML/CSS/JS. Dark black/white/gold design (Cormorant Garamond + Montserrat): sticky black header with the white Tackett Team logo, a top contact bar, a Neighborhood dropdown and a gold Contact button; full-photo heroes; image tiles; neighborhood cards; stats band; reviews; FAQ accordions; photo CTA bands. Optimized photography, SEO/AEO markup and lead capture are unchanged.
+
+- `css/styles.css` - single shared stylesheet. Design tokens (`--black`, `--gold`, `--gold-deep`, fonts) are at the top; the "v2 integration layer" section styles the SEO/AEO and lead-capture pieces (answer boxes, fact lists, valuation band, main-site band, network links, sticky mobile bar). Older `--color-*` / `--space-*` names are kept as aliases.
+- FAQ sections are `<details class="faq-item"><summary><h3>Question</h3></summary><p>Answer</p></details>` (first one open). Keep the visible Q&A text identical to the page's FAQPage JSON-LD.
+- `js/main.js` - mobile menu, Neighborhood dropdown, and the contact-form `?interest=` preselect. The Netlify form posts normally (no JavaScript submit handler).
 
 - `assets/images/photos/` - optimized WebP photos (640/1200/1920 px widths); pages use `srcset`, `width`/`height`, lazy loading (hero is preloaded).
 - `contact.html` - Netlify Form (`name="contact"`, honeypot `bot-field`, success page `thank-you.html`). Set the email notification in Netlify > Forms > Form notifications.
@@ -27,4 +31,4 @@ Beyond the generated blocks, every page carries these hand-maintained references
 
 ## Footer logo
 
-`assets/images/tackett-logo-black-540.webp` (540x128, ~10 KB) is the black Tackett Team logo used on elizabethvijan.com, shown on a white brand band at the top of the dark footer. The original PNG is kept for schema.org `logo`.
+`assets/images/tackett-logo-black-540.webp` (540x128, ~10 KB) is the black Tackett Team logo used on elizabethvijan.com, shown on a white brand band at the top of the dark footer. The original PNG is kept for schema.org `logo`. The dark header uses `assets/images/tackett-logo-white-540.webp` (540x128), made from `tackett-logo-white.png`.
