@@ -624,3 +624,5 @@ details.faq-item > p { margin: 0 0 1.4rem; color: var(--muted); }
   .sticky-bar svg { width: 16px; height: 16px; fill: currentColor; }
   body { padding-bottom: 54px; }
 }
+.post-card .post-thumb { display: block; }
+.split-media, .bio-photo { isolation: isolate; }
