@@ -626,3 +626,10 @@ details.faq-item > p { margin: 0 0 1.4rem; color: var(--muted); }
 }
 .post-card .post-thumb { display: block; }
 .split-media, .bio-photo { isolation: isolate; }
+/* About: offset gold frame around the headshot only (not the credential list) */
+.bio-photo::after { display: none; }
+.bio-photo > img, .bio-photo > picture img { box-shadow: 16px 16px 0 -1px var(--white), 16px 16px 0 0 var(--gold); margin-bottom: 16px; }
+@media (max-width: 720px) { .bio-photo > img, .bio-photo > picture img { box-shadow: none; margin-bottom: 0; } }
+/* Articles: line the hero text up with the reading column */
+.hero.page-hero:has(+ article) .hero-content { max-width: calc(780px + 2 * var(--pad)); }
+.hero.page-hero:has(+ article) h1 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); }
